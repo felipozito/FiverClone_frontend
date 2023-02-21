@@ -1,0 +1,104 @@
+.navbar {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #013914;
+      color: white;
+      transition: 0.5s all ease;
+      position: sticky;
+      top: 0;
+      &.active {
+            background-color: white;
+            color: black;
+      }
+      .container {
+            min-width: 1200px;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0px;
+            .logo {
+                  font-size: 34px;
+                  font-weight: bold;
+                  .text {
+                        cursor: pointer;
+                  }
+
+                  .dot {
+                        color: #1dbf73;
+                  }
+            }
+            .links {
+                  display: flex;
+                  align-items: center;
+                  gap: 24px;
+                  font-weight: 500px;
+                  button {
+                        color: white;
+                        padding: 10px 20px;
+                        border-radius: 5px;
+                        border: 1px solid white;
+                        cursor: pointer;
+                        background: transparent;
+                        transition: all 0.2s ease;
+                        &:hover {
+                              background-color: #1dbf73;
+                              border-color: #1dbf73;
+                        }
+                  }
+                  span {
+                        cursor: pointer;
+                        transition: all 0.5s ease-in-out;
+                        &:hover {
+                              color: #1dbf73;
+                        }
+                  }
+            }
+            .user {
+                  display: flex;
+                  align-items: center;
+                  gap: 10px;
+                  cursor: pointer;
+                  img {
+                        width: 32px;
+                        height: 32px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                  }
+                  .options {
+                        position: absolute;
+                        top: 80px;
+                        right: 0;
+                        padding: 20px;
+                        background: white;
+                        border-radius: 10px;
+                        border: 1px solid lightgray;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        color: gray;
+                        width: 200px;
+                  }
+            }
+      }
+      hr {
+            width: 100%;
+            height: 0;
+            border: 0.5px solid lightgray;
+      }
+      .menu {
+            width: 100%;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            font-weight: 300;
+            color: gray;
+            font-family: "Montserrat", sans-serif;
+            .link {
+                  transition: 0.4s all ease;
+                  &:hover {
+                        color: #1dbf73;
+                  }
+            }
+      }
+}
